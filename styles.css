@@ -1,0 +1,634 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+nav{
+    background-color: #fff;
+    padding-block: 1rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+}
+
+.genWrapper{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navWrapper>h1{
+    text-transform: capitalize;
+}
+
+.navWrapper>h1>span{
+    font-family: 'Dancing Script', cursive;
+    opacity: .5;
+}
+
+.navRight{
+    display: flex;
+    margin-right: 25rem;
+}
+
+.navItems>a{
+    text-decoration: none;
+    color: black;
+    padding-inline: 1rem;
+    text-transform: capitalize;
+}
+
+.navItems>a:nth-child(2){
+    font-weight: 900;
+    padding-bottom: .3rem;
+    border-bottom: 2px solid;
+}
+
+/* styling for main */
+
+.heroWrapper{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.banner>img{
+    width: 100%;
+}
+
+.date{
+    margin-block: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.date>span{
+    opacity: .5;
+    font-size: 12px;
+}
+
+.date>span:last-child{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner>h1{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.banner>p{
+    opacity: .5;
+    font-weight: 700;
+    margin-block: 1rem;
+}
+
+.portraitBanner{
+    border-left: 2px solid #e2e2e1;
+}
+
+.portraitCard{
+    padding-inline: 1rem;
+    margin-bottom: 1rem;
+}
+
+.portraitCard>img{
+    width: 100%;
+    height: 22vh;
+    object-fit: cover;
+}
+
+.portraitCard>h1{
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.portraitCard>p{
+    font-size: 12px;
+    opacity: .5;
+    font-weight: 700;
+    margin-block: 1rem;
+}
+
+/* styling for trending */
+
+.trending{
+    margin-top: 3rem;
+    padding-block: .7rem;
+    border-block: 2px solid #e2e2e1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trending>h2{
+    text-transform: uppercase;
+}
+
+.trending>a{
+    opacity: .4;
+    font-weight: 600;
+    color: black;
+}
+
+.direction{
+    margin-block: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.direction>i{
+    font-size: 1.5rem;
+}
+
+.trendingCards{
+    display: flex;
+    gap: 40px;
+    margin-block: 3rem;
+}
+
+.trendCard{
+    width: 30%;
+}
+
+.trendCard>img{
+    width: 100%;
+    height: 40vh;
+}
+
+.trendCard>h1{
+    font-size: .95rem;
+    text-transform: capitalize;
+}
+
+.imgContainer{
+    width: 70%;
+    height: 40vh;
+}
+
+.imgContainer>img{
+    width: 100%;
+    height: 100%;
+}
+
+.postCards{
+    margin-top: 4rem;
+}
+
+.postCard{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 3rem;
+}
+
+.content{
+    display: grid;
+    align-items: center;
+}
+
+.content>h1{
+    margin-block: 1rem;
+}
+
+.content>span{
+    opacity: .5;
+    font-size: 12px;
+}
+
+.content>span:first-child{
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.content>p{
+    padding-bottom: 1rem;
+}
+
+.sellerCards{
+    display: flex;
+    gap: 50px;
+    height: 70vh;
+}
+
+.sellerCard{
+    width: 25%;
+}
+
+.sellerCard>img{
+    width: 100%;
+    height: 60%;
+}
+
+.sellerCard>h1{
+    padding-top: 1.5rem;
+    font-weight: 500;
+    font-size: 2.1rem;
+}
+
+.sellerCard>p{
+    padding-top: .7rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    opacity: .6;
+}
+
+.buyLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    margin-block: 2rem;
+    padding-block: 1.5rem;
+}
+
+.buyLink>a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.buyLink>a>span{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.subscribe{
+    border-block: 2px solid #e2e2e1;
+    /* margin-bottom: 2rem; */
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe>h1{
+    margin: auto;
+    margin-top: 3.5rem;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.subscribe>p{
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+.subscribeLinks{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.learnMore{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 1.5rem;
+    /* border: 2px solid blue; */
+    width: 30%;
+}
+
+.buyNow{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 1.5rem;
+    /* border: 2px solid black; */
+    width: 60%;
+}
+
+.learnMore>a, .buyNow>a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.footerWrapper{
+    /* border: 2px solid red; */
+    padding-top: 5rem;
+    display: flex;
+}
+
+.contactSide{
+    width: 50%;
+    /* border: 2px solid blue; */
+}
+
+.contactSide>h1{
+    text-transform: capitalize;
+    font-size: 2.5rem;
+}
+
+.inputCont{
+    border-bottom: 2px solid black;
+    width: 97%;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputCont>input{
+    border: none;
+    outline: none;
+    padding-block: 1rem;
+    width: 26rem;
+}
+
+.inputCont>input::placeholder{
+    font-size: 1rem;
+}
+
+.inputCont>p{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
+.resources{
+    width: 50%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding-left: 6rem;
+}
+
+.resourcesList>h2{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+}
+
+.resourcesList>ul>li{
+    text-align: right;
+    padding-top: 1rem;
+    list-style: none;
+}
+
+.footerBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    margin-top: 10rem;
+}
+
+.footerBottom>h1{
+    text-transform: uppercase;
+}
+
+.logo>span{
+    text-transform: capitalize;
+    font-family: 'Dancing Script', cursive;
+    opacity: .5;
+}
+
+.bottomRight{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.bottomRight>span{
+    font-size: 12px;
+}
+
+/* responsive styling */
+
+@media(min-width: 320px) and (max-width: 400px) {
+    .navRight{
+        display: none;
+        padding: 10px;
+        position: absolute;
+        top: -10px;
+        left: 30px;
+        width: 300px;
+        margin-top: 70px;
+        z-index: 1;
+        background-color: #000;
+        opacity: .9;
+        border-bottom: 4px solid #e6ebee;
+        flex-direction: column;
+    }
+
+    .navWrapper>label,input{
+        margin-left: 16rem;
+    }
+
+    .navItems>input{
+        display: none;
+    }
+
+    .navItems{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navItems>a{
+        border-bottom: 2px solid #fff;
+        padding-block: 1.3rem;
+        color: #fff;
+        text-align: center;
+    }
+
+    .navItems>a:hover{
+        background-color: whitesmoke;
+        color: black;
+    }
+
+    .navWrapper>h1{
+        margin-left: 1rem;
+    }
+
+    .socialIcons{
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        padding-block: 1rem;
+        background-color: whitesmoke;
+    }
+
+    .socialIcons>span>{
+        color: black;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    label{
+        display: block;
+        font-size: 1.6rem;
+        margin-right: 1rem;
+    }
+
+    #toggle:checked + .navRight {
+        display: block;
+    }
+
+    .heroWrapper{
+        grid-template-columns: 1fr;
+        max-width: 350px;
+        margin: 3rem auto;
+    }
+
+    .banner>h1{
+        font-size: 1.4rem;
+    }
+
+    .portraitBanner{
+        border-top: 2px solid #e2e2e1;
+        padding-top: 2rem;
+        border-left: 0;
+        display: flex;
+        gap: 20px;
+    }
+
+    .portraitCard{
+        padding-inline: 0;
+    }
+
+    .portraitCard>img{
+        height: 20vh;
+    }
+
+    .date>span{
+        font-size: 10px;
+    }
+
+    .date>span:first-child{
+        display: none;
+    }
+
+    .trending{
+        justify-content: center;
+        max-width: 350px;
+        margin: 1rem auto;
+    }
+
+    .trending>a{
+        display: none;
+    }
+
+    .direction{
+        max-width: 350px;
+        margin: 1rem auto;
+    }
+
+    .trendingCards{
+        flex-direction: column;
+        max-width: 350px;
+        margin: 3rem auto;
+    }
+
+    .trendCard{
+        width: 350px;
+        margin: 1rem auto;
+    }
+
+    .trendCard>img{
+        width: 100%;
+    }
+
+    .postCard{
+        flex-direction: column;
+        max-width: 350px;
+        margin: 1rem auto;
+    }
+
+    .imgContainer{
+        width: 100%;
+        margin-bottom: -23px;
+    }
+
+    .content>span:last-child{
+        display: none;
+    }
+
+    .bestSeller{
+        display: none;
+    }
+
+    .subscribe{
+        max-width: 350px;
+        margin: 1rem auto;
+    }
+
+    .learnMore>a{
+        font-size: 1rem;
+    }
+
+    .buyNow>a{
+        font-size: .8rem;
+    }
+
+    .footerWrapper{
+        flex-direction: column;
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .contactSide{
+        padding-bottom: 5rem;
+        max-width: 350px;
+        margin: -3rem auto;
+        margin-left: -.1rem;
+    }
+
+    .contactSide>h1{
+        font-size: 27px;
+    }
+
+    .inputCont{
+        border-bottom: 2px solid black;
+        width: 22rem;
+    }
+
+    .inputCont>input{
+        /* border: 2px solid red; */
+        margin-left: -.1rem;
+    }
+    .inputCont>p{
+        font-size: 20px;
+    }
+
+    .footerBottom{
+        max-width: 350px;
+        margin: 1rem auto;
+    }
+
+    .bottomRight>span{
+        font-size: 10px;
+    }
+
+    .footerBottom>h1{
+        width: 50%;
+    }
+
+    .resources{
+        gap: 29px;
+        margin-left: -6rem;
+        padding-block: 2rem;
+    }
+}
